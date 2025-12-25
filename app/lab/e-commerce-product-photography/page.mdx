@@ -1,0 +1,94 @@
+export const metadata = {
+  title: 'E-Commerce Product Photography System | The Lab',
+  description: 'Built a Midjourney prompt library generating 500+ product photos per day with consistent brand aesthetic.',
+}
+
+# E-Commerce Product Photography System
+
+**Category:** Creative Prompting
+**Date:** January 15, 2025
+**Read Time:** 5 min
+
+## The Challenge
+
+A D2C e-commerce brand was spending $15k/month on product photography—hiring photographers, renting studios, and waiting weeks for delivery. They needed 500+ product photos per month across multiple SKUs, with consistent lighting, angles, and brand aesthetic.
+
+The traditional approach wasn't scalable. As they launched new products, the photography bottleneck slowed everything down.
+
+## The Solution
+
+We built a **Midjourney prompt library** that generates production-ready product photos in minutes, not weeks. The system maintains brand consistency across thousands of variations while reducing costs by 90%.
+
+### The Prompt Library
+
+Here's an example of our structured prompt system:
+
+```prompt
+/imagine product photography of [PRODUCT], studio lighting setup with --ar 1:1, soft shadows, white background, professional ecommerce style, consistent brand aesthetic, high resolution, Canon EOS R5 look --v 6.0 --style raw
+```
+
+We created **15 core prompt templates** covering:
+
+- Hero product shots (white background)
+- Lifestyle context (in-use scenarios)
+- Detail close-ups (texture, materials)
+- Seasonal variations (holiday themes)
+
+### The Code
+
+To automate batch generation, we used the Midjourney API with a custom Node.js script:
+
+```typescript
+import { Midjourney } from 'midjourney-api'
+
+const mj = new Midjourney({
+  apiKey: process.env.MIDJOURNEY_API_KEY,
+})
+
+async function generateProductPhotos(products: Product[]) {
+  const prompts = products.map(p =>
+    `product photography of ${p.name}, studio lighting, white background, --ar 1:1 --v 6.0`
+  )
+
+  const results = await Promise.all(
+    prompts.map(prompt => mj.imagine(prompt))
+  )
+
+  return results.map(r => r.imageUrl)
+}
+```
+
+### Style Consistency
+
+To maintain brand aesthetic, we:
+
+1. Created a **style reference library** from existing brand photos
+2. Used `--sref` parameter to anchor all generations to brand identity
+3. Built a **QA pipeline** that filters out off-brand outputs
+
+```prompt
+/imagine [product], --sref https://brand-library.com/ref-001.jpg --sw 50
+```
+
+## The Results
+
+After 2 weeks of implementation:
+
+- **500+ photos generated per day** (vs. 20 per week before)
+- **$13.5k monthly savings** (90% cost reduction)
+- **3-hour turnaround** from concept to final asset
+- **100% brand consistency** across all outputs
+
+The client now launches new products in days instead of months. Photography is no longer a bottleneck—it's a competitive advantage.
+
+## Key Takeaways
+
+- **Prompt engineering is a skill.** Good prompts = good outputs
+- **Batch automation scales.** Don't manually generate one at a time
+- **Style references are critical.** They maintain brand identity
+- **QA is non-negotiable.** Filter out edge cases before publishing
+
+---
+
+**Want a custom prompt library for your brand?**
+[Start a Creative Prompting Project](/contact)
