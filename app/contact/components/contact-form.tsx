@@ -93,7 +93,7 @@ export default function ContactForm() {
         {submitStatus === 'success' && (
           <div className="p-4 bg-surface border border-accent rounded-lg">
             <p className="text-accent font-mono text-sm">
-              ✓ Request submitted! We'll be in touch within 24 hours.
+              ✓ Request submitted! We&apos;ll be in touch within 24 hours.
             </p>
           </div>
         )}

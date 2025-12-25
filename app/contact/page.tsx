@@ -3,7 +3,7 @@ import ContactForm from './components/contact-form'
 
 export const metadata: Metadata = {
   title: 'Contact | AI Consultancy',
-  description: 'Book a free audit call. We'll analyze your workflow and recommend the best AI-powered solutions.',
+  description: 'Book a free audit call. We\'ll analyze your workflow and recommend the best AI-powered solutions.',
 }
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
             Audit My Business
           </h1>
           <p className="text-xl text-text-secondary">
-            Book a free audit call. We'll analyze your workflow, identify automation opportunities,
+            Book a free audit call. We&apos;ll analyze your workflow, identify automation opportunities,
             and recommend the best approach—no sales pitch, just pragmatic advice.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                 What happens after I submit this form?
               </h3>
               <p className="text-text-secondary">
-                We'll email you within 24 hours to schedule a 30-minute audit call. No commitment required.
+                We&apos;ll email you within 24 hours to schedule a 30-minute audit call. No commitment required.
               </p>
             </div>
 
@@ -70,8 +70,8 @@ export default function ContactPage() {
                 What do you cover in the audit call?
               </h3>
               <p className="text-text-secondary">
-                We'll review your current workflow, identify bottlenecks, and recommend specific AI solutions.
-                If we're a good fit, we'll propose a sprint plan. If not, we'll point you in the right direction.
+                We&apos;ll review your current workflow, identify bottlenecks, and recommend specific AI solutions.
+                If we&apos;re a good fit, we&apos;ll propose a sprint plan. If not, we&apos;ll point you in the right direction.
               </p>
             </div>
 
@@ -86,10 +86,10 @@ export default function ContactPage() {
 
             <div>
               <h3 className="text-xl font-heading font-semibold mb-2">
-                What if I'm not sure which service I need?
+                What if I&apos;m not sure which service I need?
               </h3>
               <p className="text-text-secondary">
-                That's exactly what the audit call is for. We'll help you figure out the best approach.
+                That&apos;s exactly what the audit call is for. We&apos;ll help you figure out the best approach.
               </p>
             </div>
           </div>

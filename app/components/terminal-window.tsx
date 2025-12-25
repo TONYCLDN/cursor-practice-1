@@ -28,6 +28,7 @@ export default function TerminalWindow() {
     })
 
     return () => intervals.forEach(clearTimeout)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

@@ -48,7 +48,7 @@ export default function ProcessPage() {
               A Typical 1-Week Sprint
             </h2>
             <p className="text-xl text-text-secondary">
-              Here's how we move from idea to production in 5 days
+              Here&apos;s how we move from idea to production in 5 days
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function ProcessPage() {
                 Fixed Scope, Fixed Price
               </h3>
               <p className="text-text-secondary">
-                No surprise bills. You know exactly what you're getting and what it costs upfront.
+                No surprise bills. You know exactly what you&apos;re getting and what it costs upfront.
               </p>
             </div>
 
@@ -110,7 +110,7 @@ export default function ProcessPage() {
             Ready to start a sprint?
           </h2>
           <p className="text-xl text-text-secondary mb-8">
-            Book a free audit call and we'll recommend the best approach for your project.
+            Book a free audit call and we&apos;ll recommend the best approach for your project.
           </p>
           <a
             href="/contact"

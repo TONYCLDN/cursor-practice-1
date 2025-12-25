@@ -2,10 +2,7 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
   options: {
     remarkPlugins: [],
-    rehypePlugins: [[require('rehype-pretty-code'), {
-      theme: 'github-dark',
-      keepBackground: false,
-    }]],
+    rehypePlugins: [],
   },
 })
 

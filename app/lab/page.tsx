@@ -18,7 +18,7 @@ export default function LabPage() {
             Behind the Scenes
           </h1>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-            We don't just show what we built—we show <em>how</em> we built it.
+            We don&apos;t just show what we built—we show <em>how</em> we built it.
             See the prompts, the code, and the real results. Complete transparency.
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function LabPage() {
             Want results like these?
           </h2>
           <p className="text-xl text-text-secondary mb-8">
-            Let's build something together. Start with a free audit call.
+            Let&apos;s build something together. Start with a free audit call.
           </p>
           <a
             href="/contact"
